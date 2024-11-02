@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacje o Ślubie</title>
-    
-    <script type="module" src="index.js"></script>
+
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js"></script>
 </head>
 <body>
-    <div class="container">
-	    <div class="content">
-        <!-- Obrazek na górze strony -->
-	<!--<img src="https://via.placeholder.com/100" alt="Obrazek pary młodej">-->
+<div class="container">
+    <div class="content">
         <img class="imga" src="https://openclipart.org/image/2400px/svg_to_png/237363/DecorativeDivider104.png">
-        <!-- Nagłówek -->
         <h1>Małgorzata i Hubert</h1>
-        
-        <!-- Opis wydarzenia -->
-	<p>
-       	Informacje o dojeździe :)
-	</p>
-	<div id="map"></div>
-	<!--
-	<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="gjjkkogle",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyAr1D7wZxFUCGf_Lwg-PXOA2hY_LK0VH7k", v: "weekly"});</script>
-	-->
-	<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyAr1D7wZxFUCGf_Lwg-PXOA2hY_LK0VH7k", v: "weekly"});</script>
-	    </div>
-        <!-- Opcjonalnie: Możesz dodać dodatkowe sekcje, np. kontakt lub mapę -->
-	<footer>
-		<br>
-		<hr class="rounded">
-		<br>
-		<a href="index.html">[Strona Główna]</a> [Dojazd] <a href="kontakt.html">[Kontakt]</a>
-	</footer>
+
+        <p>
+            Informacje o dojeździe :)
+        </p>
+        <div id="map"></div>
+        <script>
+            (g => {
+                var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__",
+                    m = document, b = window;
+                b = b[c] || (b[c] = {});
+                var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+                    u = () => h || (h = new Promise(async (f, n) => {
+                        await (a = m.createElement("script"));
+                        e.set("libraries", [...r] + "");
+                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                        e.set("callback", c + ".maps." + q);
+                        a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                        d[q] = f;
+                        a.onerror = () => h = n(Error(p + " could not load."));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                        m.head.append(a)
+                    }));
+                d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+            })
+            ({key: "AIzaSyAr1D7wZxFUCGf_Lwg-PXOA2hY_LK0VH7k", v: "weekly"});
+        </script>
     </div>
+
+    <footer>
+        <br>
+        <hr class="rounded">
+        <br>
+        <a href="index.html">[Strona Główna]</a> [Dojazd] <a href="kontakt.html">[Kontakt]</a>
+    </footer>
+</div>
 </body>
 </html>
 
