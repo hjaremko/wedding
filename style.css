@@ -11,6 +11,7 @@ body {
     height: 100svh;
     background-color: #f8f8f8;
     font-family: Arial, sans-serif;
+    opacity: 0.90;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,4 +120,18 @@ a:hover {
 
 #map {
     height: 85%;
+}
+
+.background {
+    background-image: url(DSC_5896.jpeg);
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    backdrop-filter: blur(4px);
+    background-position: 100% 20%;
+}
+
+@media (prefers-color-scheme: dark) {
+    .background {
+        backdrop-filter: blur(4px) brightness(75%);
+    }
 }
