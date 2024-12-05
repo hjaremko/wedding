@@ -5,30 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacje o Ślubie</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="index.js"></script>
 </head>
-<body class="background">
+<body class="background" onload="getPreferredLanguage()">
 <div class="container">
-    <img class="divider" src="divider.png">
+    <img class="divider" src="../res/divider.png">
     <div class="overlay"></div>
     <h1>Małgorzata i Hubert</h1>
-
-    <div class="content">
-        <p>
-            Serdecznie zapraszamy na uroczystość zaślubin, która odbędzie się 10 maja 2025 roku o godzinie 13:15 w
-            Hotelu
-            Saskim. Po ceremonii zapraszamy na przyjęcie weselne do Folwarku Zalesie.
-        </p>
-        <p>Prosimy o potwierdzenie przybycia do 1 kwietnia 2025 roku.</p>
-    </div>
 
     <footer>
         <br>
         <hr class="rounded">
         <br>
         [ Strona Główna ]
-        <a href="dojazd.html">[ Dojazd ]</a>
-        <a href="kontakt.html">[ Kontakt ]</a>
+        <a href="pl/dojazd.html">[ Dojazd ]</a>
+        <a href="pl/kontakt.html">[ Kontakt ]</a>
+        <br>
+        <br>
+        <div class="lang-picker">
+            <a href="pl/index.html" onclick="preferPolish()">🇵🇱</a>
+            <a href="en/index.html" onclick="preferEnglish()">🇬🇧</a>
+        </div>
     </footer>
 </div>
 </body>

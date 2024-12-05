@@ -123,7 +123,7 @@ a:hover {
 }
 
 .background {
-    background-image: url(DSC_5896.jpeg);
+    background-image: url(res/DSC_5896.jpeg);
     background-repeat: no-repeat;
     background-size: 150% 150%;
     backdrop-filter: blur(4px);
@@ -133,5 +133,13 @@ a:hover {
 @media (prefers-color-scheme: dark) {
     .background {
         backdrop-filter: blur(4px) brightness(75%);
+    }
+}
+
+.lang-picker {
+    font-size: xxx-large;
+
+    .not-picked {
+        opacity: 0.25;
     }
 }

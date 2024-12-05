@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informacje o Ślubie</title>
+    <title>Wedding Information</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="../map.js"></script>
+    <script src="../index.js"></script>
 </head>
 <body class="background">
 <div class="container">
-    <img class="divider" src="divider.png">
-    <h1>Małgorzata i Hubert</h1>
+    <img class="divider" src="../res/divider.png">
+    <h1>Małgorzata and Hubert</h1>
 
     <div class="content">
         <p>
-            Informacje o dojeździe :)
+            Direction information :)
         </p>
         <div id="map"></div>
         <script>
@@ -45,7 +46,13 @@
         <br>
         <hr class="rounded">
         <br>
-        <a href="index.html">[ Strona Główna ]</a> [ Dojazd ] <a href="kontakt.html">[ Kontakt ]</a>
+        <a href="index.html">[ Home ]</a> [ Direction ] <a href="contact.html">[ Contact ]</a>
+        <br>
+        <br>
+        <div class="lang-picker">
+            <a href="../pl/dojazd.html" onclick="preferPolish()" class="not-picked">🇵🇱</a>
+            <a href="directions.html" onclick="preferEnglish()">🇬🇧</a>
+        </div>
     </footer>
 </div>
 </body>
